@@ -7,6 +7,8 @@
 
 }
 
+/* typography */
+
 html{
     font-size: 62.5%;
 }
@@ -61,5 +63,35 @@ p{
        
     }
     
+    
+}
+
+/* links */
+
+a{
+    text-decoration: none;
+}
+
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after{
+    content: "-->";
+    margin-left: 5px;
+    transition: margin-left 0.2s;
+}
+
+.link-arrow:hover::after{
+    margin-left: 10px;
+}
+
+@media screen  and (min-width: 1024px){
+    a{
+        font-size: 1.5rem;
+    }
     
 }
